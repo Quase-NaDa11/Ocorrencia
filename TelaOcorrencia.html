@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/escola-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!---->
+    <header>
+      <div class="logo-container">
+        <img
+          src="img/brasao-do-ceara.png"
+          alt=""
+          width="70px"
+        />
+        <p class="texto" style="color:white;">
+          GOVERNO DO ESTADO DO CEARÁ <br />
+          19ª COORDENADORIA REGIONAL DE DESENVOLVIMENTO DA EDUCAÇÃO <br />
+          ESCOLA ESTADUAL DE EDUCAÇÃO PROFISSONAL PAULO BARBOSA LEITE
+        </p>
+
+        <img src="img/escola-removebg-preview.png" alt="" width="100px" />
+      </div>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <h1>REGISTRO DE SITUAÇÕES DIVERSAS</h1>
+
+        <form action="">
+          <fieldset class="estudante">
+            <label for="">Estudante:</label><br />
+            <input type="text" /><br />
+
+            <select name="" id="">
+              <option disabled selected hidden>Aula</option>
+              <option value="">1°</option>
+              <option value="">2°</option>
+              <option value="">3°</option>
+              <option value="">4°</option>
+              <option value="">5°</option>
+              <option value="">6°</option>
+              <option value="">7°</option>
+              <option value="">8°</option>
+              <option value="">9°</option>
+            </select>
+
+            <label for="situacao">Escolha uma situação:</label>
+            <select name="situacao" onchange="mostrarInput(this)">
+              <option disabled selected hidden>Situação</option>
+              <option value="indisciplina">Indisciplina</option>
+              <option value="celular">Celular</option>
+              <option value="desrespeito">Desrespeito</option>
+              <option value="rendimento">Rendimento</option>
+              <option value="atrasos">Atrasos</option>
+              <option value="faltas">Faltas</option>
+              <option value="outros">Outros</option>
+            </select>
+
+            <input
+              type="text"
+              id="outro"
+              style="display: none"
+              placeholder="Digite aqui sua opção"
+            />
+
+            <select name="" id="">
+              <option disabled selected hidden>Turma</option>
+              <option value="">1° Administração</option>
+              <option value="">1° Agropecuária</option>
+              <option value="">1° Informática</option>
+              <option value="">1° Desenvolvimento de Sistema</option>
+              <option value="">2° Administração</option>
+              <option value="">2° Agropecuária</option>
+              <option value="">2° Informática</option>
+              <option value="">2° Desenvolvimento de Sistema</option>
+              <option value="">3° Administração</option>
+              <option value="">3° Agropecuária</option>
+              <option value="">3° Informática</option>
+              <option value="">3° Desenvolvimento de Sistema</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="professor">
+            <label for="">Prof. Responsável</label><br />
+            <input type="text" />
+
+            <label for="">Data:</label><br />
+            <input type="datetime-local" />
+
+            <label for="">Descrição:</label> <br />
+            <textarea name="" id="" rows="5" cols="89"></textarea>
+
+            <label for="">Encaminhamento:</label><br />
+            <textarea name="" id="" rows="4" cols="89"></textarea>
+          </fieldset>
+
+          <fieldset class="coordenacao">
+            <label for="">Data de recebimento:</label><br />
+            <input type="datetime-local" />
+
+            <label for="">Responsável pelo recebimento:</label><br />
+            <input type="text" />
+
+            <button>Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
