@@ -44,7 +44,7 @@
         <form action="">
           <fieldset class="estudante">
             <label for="">Estudante:</label><br />
-            <input type="text" /><br />
+            <input type="text"   required/><br />
 
             <select name="" id="">
               <option disabled selected hidden>Aula</option>
@@ -97,24 +97,24 @@
 
           <fieldset class="professor">
             <label for="">Prof. Responsável</label><br />
-            <input type="text" />
-
+            <input type="text" required />
+ 
             <label for="">Data:</label><br />
-            <input type="datetime-local" />
+            <input type="datetime-local"  required/>
 
             <label for="">Descrição:</label> <br />
-            <textarea name="" id="" rows="5" cols="89"></textarea>
+            <textarea name="" id="" rows="5" cols="89" required></textarea>
 
             <label for="">Encaminhamento:</label><br />
-            <textarea name="" id="" rows="4" cols="89"></textarea>
+            <textarea name="" id="" rows="4" cols="89"required></textarea>
           </fieldset>
 
           <fieldset class="coordenacao">
             <label for="">Data de recebimento:</label><br />
-            <input type="datetime-local" />
+            <input type="datetime-local" required/>
 
             <label for="">Responsável pelo recebimento:</label><br />
-            <input type="text" />
+            <input type="text" required />
 
             <button>Enviar</button>
           </fieldset>
