@@ -31,58 +31,78 @@
       </div>
     </header>
     <main>
-      <div class="h1-busca">
-        <div class="historico">
-          <h1 style="color: white">Histórico</h1>
+      <div class="tudo">
+        <div class="h1-novo">
+          <div class="h1-busca">
+            <div class="btn-group">
+              <button
+                type="button"
+                id="Concluido"
+                class="btn btn-success btn-xs"
+              >
+                Concluido
+              </button>
+              <button
+                type="button"
+                id="Andamento"
+                class="btn btn-warning btn-xs"
+              >
+                Andamento
+              </button>
+              <button type="button" class="btn btn-xs">Todos</button>
+            </div>
+
+            <div id="divBusca">
+              <input type="text" id="txtBusca" placeholder="Buscar..." />
+              <img src="img/lupa.png" id="btnBusca" alt="Buscar" width="20px" />
+            </div>
+          </div>
+          <div class="novo">
+            <a href="TelaOcorrencia.html">
+              <button>Nova Ocorrência</button>
+            </a>
+          </div>
         </div>
 
-        <div id="divBusca">
-          <input type="text" id="txtBusca" placeholder="Buscar..." />
-          <img src="img/lupa.png" id="btnBusca" alt="Buscar" width="20px" />
-        </div>
-      </div>
+        <div class="main-container">
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome:</th>
 
-      <div class="main-container">
-        <div class="tabela">
-        <table border="">
-          <tr>
-          <th>Aluno:</th>
-          <th>Situação:</th>
-          <th>Data:</th>
-          <th>Conclusão:</th>
-          </tr>
+                  <th>Problema:</th>
+                  <th>Data:</th>
+                  <th>Situação:</th>
+                </tr>
+              </thead>
 
-          <tr>
-          <td>Francisco Hugo</td>
-          
-          <td>Celular</td>
-          <td>08/03/2025 11:24</td>
-          <td>Concluido</td>
-          </tr>
+              <tr>
+                <td>{{nome}}</td>
 
-          <tr>
-          <td>Francisco Jose</td>
-          <td>Desrespeito</td>
-          <td>08/03/2025 11:30</td>
-          <td>Concluido</td>
-          </tr>
+                <td>((Celular))</td>
+                <td>{{08/03/2025 11:24}}</td>
+                <td data-estado="Concluido">Concluido</td>
+              </tr>
+              <tr>
+                <td>{{nome.}}</td>
 
-          <tr>
-            <td>Lucas</td>
-            <td>Atraso</td>
-            <td>08/03/2025 11:59</td>
-            <td>Concluido</td>
-            </tr>
-  
-              
+                <td>((Celular))</td>
+                <td>{{08/03/2025 11:24}}</td>
+                <td data-estado="Concluido">Concluido</td>
+              </tr>
+              <tr>
+                <td>{{nome.}}</td>
 
-            
-           
-           
-          </table>
-        </div>
+                <td>((Celular))</td>
+                <td>{{08/03/2025 11:24}}</td>
+                <td data-estado="Andamento">Andamento</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </main>
+    <script src="historicoscript.js"></script>
   </body>
 </html>
