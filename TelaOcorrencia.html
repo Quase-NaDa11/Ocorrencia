@@ -22,12 +22,8 @@
     <!---->
     <header>
       <div class="logo-container">
-        <img
-          src="img/brasao-do-ceara.png"
-          alt=""
-          width="70px"
-        />
-        <p class="texto" style="color:white;">
+        <img src="img/brasao-do-ceara.png" alt="" width="70px" />
+        <p class="texto" style="color: white">
           GOVERNO DO ESTADO DO CEARÁ <br />
           19ª COORDENADORIA REGIONAL DE DESENVOLVIMENTO DA EDUCAÇÃO <br />
           ESCOLA ESTADUAL DE EDUCAÇÃO PROFISSONAL PAULO BARBOSA LEITE
@@ -41,12 +37,12 @@
       <div class="main-container">
         <h1>REGISTRO DE SITUAÇÕES DIVERSAS</h1>
 
-        <form action="">
+        <form action="ocorrencia.php" method="post">
           <fieldset class="estudante">
             <label for="">Estudante:</label><br />
-            <input type="text"   required/><br />
+            <input type="text" name="nome" required /><br />
 
-            <select name="" id="">
+            <select name="aula" id="">
               <option disabled selected hidden>Aula</option>
               <option value="">1°</option>
               <option value="">2°</option>
@@ -78,7 +74,7 @@
               placeholder="Digite aqui sua opção"
             />
 
-            <select name="" id="">
+            <select name="turma" id="">
               <option disabled selected hidden>Turma</option>
               <option value="">1° Administração</option>
               <option value="">1° Agropecuária</option>
@@ -97,27 +93,38 @@
 
           <fieldset class="professor">
             <label for="">Prof. Responsável</label><br />
-            <input type="text" required />
- 
+            <input type="text" name="nome_prof" required />
+
             <label for="">Data:</label><br />
-            <input type="datetime-local"  required/>
+            <input type="datetime-local" name="data" required />
 
             <label for="">Descrição:</label> <br />
-            <textarea name="" id="" rows="5" cols="89" required></textarea>
+            <textarea
+              name="descricao"
+              id=""
+              rows="5"
+              cols="89"
+              required
+            ></textarea>
 
             <label for="">Encaminhamento:</label><br />
-            <textarea name="" id="" rows="4" cols="89"required></textarea>
+            <textarea
+              name="encaminhamento"
+              id=""
+              rows="4"
+              cols="89"
+              required
+            ></textarea>
           </fieldset>
 
           <fieldset class="coordenacao">
             <label for="">Data de recebimento:</label><br />
-            <input type="datetime-local" required/>
+            <input type="datetime-local" required />
 
             <label for="">Responsável pelo recebimento:</label><br />
             <input type="text" required />
-           
-        <button>Enviar</button>
-            
+
+            <button type="submit">Enviar</button>
           </fieldset>
         </form>
       </div>
